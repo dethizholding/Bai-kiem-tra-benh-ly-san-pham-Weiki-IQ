@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn đề kiểm tra ngẫu nhiên - WEIKI IQ </title>
+    <script>
+        window.onload = function() {
+            // Danh sách link đến các Google Form
+            const forms = [
+                "https://docs.google.com/forms/d/1HK_eRD6ITg4S607dCw7Wabi7nPGqwNPVq1mv88AYYEU/edit", // Thay bằng link Form 1
+                "https://docs.google.com/forms/d/13W_J_1Fl5-gDRAgZkdkF2VclhZD5-U-yRhYXprYxw8s/edit", // Thay bằng link Form 2
+		"https://docs.google.com/forms/d/1bzfFZM-zuwoOFOIMZX88AZ2U0vuoj9zk4u-Hj_FY8h8/edit",
+                "https://docs.google.com/forms/d/1qnoF9iZ-h_bKzzvm-mCGT_jnilcryyGhxE5m7_IpA2c/edit"  // Thay bằng link Form 3
+            ];
+
+            // Chọn ngẫu nhiên một link
+            const randomForm = forms[Math.floor(Math.random() * forms.length)];
+
+            // Chuyển hướng người dùng
+            window.location.href = randomForm;
+        };
+    </script>
+</head>
+<body>
+    <h1>Đang chọn đề ngẫu nhiên...</h1>
+    <p>Nếu bạn không được chuyển hướng, hãy <a id="manualLink" href="#">bấm vào đây</a>.</p>
+    <script>
+        const forms = [
+            "https://docs.google.com/forms/d/1HK_eRD6ITg4S607dCw7Wabi7nPGqwNPVq1mv88AYYEU/edit", // Thay bằng link Form 1
+                "https://docs.google.com/forms/d/13W_J_1Fl5-gDRAgZkdkF2VclhZD5-U-yRhYXprYxw8s/edit", // Thay bằng link Form 2
+		"https://docs.google.com/forms/d/1bzfFZM-zuwoOFOIMZX88AZ2U0vuoj9zk4u-Hj_FY8h8/edit",
+                "https://docs.google.com/forms/d/1qnoF9iZ-h_bKzzvm-mCGT_jnilcryyGhxE5m7_IpA2c/edit"  // Thay bằng link Form 3
+        ];
+        document.getElementById('manualLink').href = forms[Math.floor(Math.random() * forms.length)];
+    </script>
+</body>
+</html>
